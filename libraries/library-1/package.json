@@ -6,5 +6,8 @@
   "repository": "git@github.com:mhal007/monorepo-yarn",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@mhal007/monorepo-yarn-library-helper": "0.0.1"
   }
 }

@@ -10,5 +10,9 @@
   },
   "scripts": {
     "start": "node index.js"
+  },
+  "dependencies": {
+    "@mhal007/monorepo-yarn-library-1": "0.0.1",
+    "@mhal007/monorepo-yarn-library-2": "0.0.1"
   }
 }
