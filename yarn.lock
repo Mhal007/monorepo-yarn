@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mhal007/monorepo-yarn-application-1@workspace:applications/application-1"
   dependencies:
-    "@mhal007/monorepo-yarn-library-1": 0.4.0
+    "@mhal007/monorepo-yarn-library-1": 0.5.0
   languageName: unknown
   linkType: soft
 
@@ -17,8 +17,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mhal007/monorepo-yarn-application-2@workspace:applications/application-2"
   dependencies:
-    "@mhal007/monorepo-yarn-library-1": 0.4.0
-    "@mhal007/monorepo-yarn-library-2": 0.4.0
+    "@mhal007/monorepo-yarn-library-1": 0.5.0
+    "@mhal007/monorepo-yarn-library-2": 0.5.0
   languageName: unknown
   linkType: soft
 
@@ -26,37 +26,37 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mhal007/monorepo-yarn-application-3@workspace:applications/application-3"
   dependencies:
-    "@mhal007/monorepo-yarn-library-1": 0.4.0
-    "@mhal007/monorepo-yarn-library-2": 0.4.0
-    "@mhal007/monorepo-yarn-library-3": 0.4.0
+    "@mhal007/monorepo-yarn-library-1": 0.5.0
+    "@mhal007/monorepo-yarn-library-2": 0.5.0
+    "@mhal007/monorepo-yarn-library-3": 0.5.0
   languageName: unknown
   linkType: soft
 
-"@mhal007/monorepo-yarn-library-1@0.4.0, @mhal007/monorepo-yarn-library-1@workspace:libraries/library-1":
+"@mhal007/monorepo-yarn-library-1@0.5.0, @mhal007/monorepo-yarn-library-1@workspace:libraries/library-1":
   version: 0.0.0-use.local
   resolution: "@mhal007/monorepo-yarn-library-1@workspace:libraries/library-1"
   dependencies:
-    "@mhal007/monorepo-yarn-library-helper": 0.3.0
+    "@mhal007/monorepo-yarn-library-helper": 0.4.0
   languageName: unknown
   linkType: soft
 
-"@mhal007/monorepo-yarn-library-2@0.4.0, @mhal007/monorepo-yarn-library-2@workspace:libraries/library-2":
+"@mhal007/monorepo-yarn-library-2@0.5.0, @mhal007/monorepo-yarn-library-2@workspace:libraries/library-2":
   version: 0.0.0-use.local
   resolution: "@mhal007/monorepo-yarn-library-2@workspace:libraries/library-2"
   dependencies:
-    "@mhal007/monorepo-yarn-library-helper": 0.3.0
+    "@mhal007/monorepo-yarn-library-helper": 0.4.0
   languageName: unknown
   linkType: soft
 
-"@mhal007/monorepo-yarn-library-3@0.4.0, @mhal007/monorepo-yarn-library-3@workspace:libraries/library-3":
+"@mhal007/monorepo-yarn-library-3@0.5.0, @mhal007/monorepo-yarn-library-3@workspace:libraries/library-3":
   version: 0.0.0-use.local
   resolution: "@mhal007/monorepo-yarn-library-3@workspace:libraries/library-3"
   dependencies:
-    "@mhal007/monorepo-yarn-library-helper": 0.3.0
+    "@mhal007/monorepo-yarn-library-helper": 0.4.0
   languageName: unknown
   linkType: soft
 
-"@mhal007/monorepo-yarn-library-helper@0.3.0, @mhal007/monorepo-yarn-library-helper@workspace:libraries/library-helper":
+"@mhal007/monorepo-yarn-library-helper@0.4.0, @mhal007/monorepo-yarn-library-helper@workspace:libraries/library-helper":
   version: 0.0.0-use.local
   resolution: "@mhal007/monorepo-yarn-library-helper@workspace:libraries/library-helper"
   languageName: unknown
