@@ -5,3 +5,4 @@ releases:
   "@mhal007/monorepo-yarn-library-1": minor
   "@mhal007/monorepo-yarn-library-2": minor
   "@mhal007/monorepo-yarn-library-3": minor
+  "@mhal007/monorepo-yarn-library-helper": minor
