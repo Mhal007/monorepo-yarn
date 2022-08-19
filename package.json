@@ -1,0 +1,19 @@
+{
+  "name": "@mhal007/monorepo-yarn",
+  "version": "0.0.1",
+  "repository": "git@github.com:mhal007/monorepo-yarn",
+  "homepage": "https://github.com/Mhal007/monorepo-yarn#readme",
+  "scripts": {
+    "start": "yarn workspaces foreach run start",
+    "start-parallel": "yarn workspaces foreach --parallel run start",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "8.0.1"
+  },
+  "workspaces": [
+    "applications/*",
+    "libraries/*"
+  ],
+  "packageManager": "yarn@3.2.2"
+}
