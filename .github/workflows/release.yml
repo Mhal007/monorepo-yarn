@@ -40,7 +40,7 @@ jobs:
       - name: Commit new versions
         run: git commit -am 'Versions bump'
 
-      - name: Push commited changes
+      - name: Push committed changes
         run: git push
 
       - name: Set yarn auth token
