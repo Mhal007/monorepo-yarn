@@ -1,4 +1,4 @@
-name: yarn publish
+name: yarn release
 
 on:
   push:
