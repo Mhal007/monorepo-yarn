@@ -23,6 +23,12 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: Verify that release strategies are attached to workspaces
+        run: yarn version check
+
+      - name: Apply release strategies
+        run: yarn version apply --all
+
       - name: Set git Identity
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -31,20 +37,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set yarn auth token
-        run: yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Verify that release strategies are attached to workspaces
-        run: yarn version check
-
-      - name: Apply release strategies
-        run: yarn version apply --all
-
       - name: Commit new versions
         run: git commit -am 'Versions bump'
 
-      - name: Push commited changes
+      - name: Push committed changes
         run: git push
+
+      - name: Set yarn auth token
+        run: yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish
         run: yarn workspaces foreach --no-private npm publish --tolerate-republish

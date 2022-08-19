@@ -22,13 +22,16 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Git Identity
+      - name: Verify that release strategies are attached to workspaces
+        run: yarn version check
+
+      - name: Apply release strategies (dry run)
+        run: yarn version apply --all --dry-run
+
+      - name: Set git Identity
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Verify that release strategies are attached to workspaces
-        run: yarn version check
