@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Git Identity
+      - name: Set git Identity
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -31,7 +31,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set yarn auth token
+        run: yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish
         run: yarn workspaces foreach --no-private npm publish --tolerate-republish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
