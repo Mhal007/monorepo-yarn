@@ -43,5 +43,8 @@ jobs:
       - name: Commit new versions
         run: git commit -am 'Versions bump'
 
+      - name: Push commited changes
+        run: git push
+
       - name: Publish
         run: yarn workspaces foreach --no-private npm publish --tolerate-republish
