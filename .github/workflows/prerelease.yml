@@ -28,7 +28,7 @@ jobs:
       - name: Apply release strategies (dry run)
         run: yarn version apply --all --dry-run
 
-      - name: Set git Identity
+      - name: Set git identity
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
