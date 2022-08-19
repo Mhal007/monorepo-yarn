@@ -34,8 +34,11 @@ jobs:
       - name: Set yarn auth token
         run: yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Verify versions are attached to workspaces
+      - name: Verify that release strategies are attached to workspaces
         run: yarn version check
+
+      - name: Apply release strategies
+        run: yarn version apply --all
 
       - name: Publish
         run: yarn workspaces foreach --no-private npm publish --tolerate-republish
