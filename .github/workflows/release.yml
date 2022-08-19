@@ -40,5 +40,8 @@ jobs:
       - name: Apply release strategies
         run: yarn version apply --all
 
+      - name: Commit new versions
+        run: git commit -am 'Versions bump'
+
       - name: Publish
         run: yarn workspaces foreach --no-private npm publish --tolerate-republish
