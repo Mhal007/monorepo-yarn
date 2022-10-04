@@ -1,6 +1,6 @@
 {
   "name": "@mhal007/monorepo-yarn-library-3",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": "index.js",
   "type": "module",
   "repository": "git@github.com:mhal007/monorepo-yarn",
@@ -8,6 +8,6 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@mhal007/monorepo-yarn-library-helper": "0.4.0"
+    "@mhal007/monorepo-yarn-library-helper": "0.5.0"
   }
 }
