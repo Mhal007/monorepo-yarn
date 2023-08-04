@@ -1,11 +1,12 @@
 node_modules/
 .idea/
 
-# yarn zero-installs tracking
+# yarn
+.yarnrc.yml
 .yarn/*
-!.yarn/cache
 !.yarn/patches
-!.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+!.yarn/plugins
+.pnp.*
